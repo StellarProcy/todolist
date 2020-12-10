@@ -1,3 +1,16 @@
+
+# Just a simple to-do-list
+
+Please be sure, that you have install Docker, before start
+
+# Installation
+
+1.
+2.
+3.
+4.
+5.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
