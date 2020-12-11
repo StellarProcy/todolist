@@ -8,9 +8,11 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
         background: todo.isCompleted ? "DarkSeaGreen" : "" , 
         color: todo.isCompleted ? "gray" : "" }}
     >
-      {todo.text}
+      <div className="todo-Text" 
+        onClick={() => completeTodo(index)}>
+        {todo.text}
+      </div>
       <div>
-        <button onClick={() => completeTodo(index)}>Complete</button>
         <button onClick={() => removeTodo(index)}>x</button>
       </div>
     </div>
