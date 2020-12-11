@@ -33,4 +33,4 @@ for example:
 ### Note: if you want to change port - change 3005 on whatever you want.
 
 ### 6. Try the app by click on the link: 
-[http:\\localhost:3005] (or another port, if you chage it)
+[http:\\localhost:3005](http:\\localhost:3005) (or another port, if you chage it)
