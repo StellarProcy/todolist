@@ -3,6 +3,7 @@ import React from 'react';
 import "../../App.css";
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
+
   return (
     <div
       className="todo"
@@ -10,7 +11,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
         background: todo.isCompleted ? "DarkSeaGreen" : "" , 
         color: todo.isCompleted ? "gray" : "" }}
     >
-      <div className="todo-Text" 
+      <div 
         onClick={() => completeTodo(index)}>
         {todo.text}
       </div>
