@@ -48,14 +48,6 @@ function App() {
       text: "Какая-то задача",
       isCompleted: false
     },
-    {
-      text: "Еще какая-то задача",
-      isCompleted: false
-    },
-    {
-      text: "И еще одна задача",
-      isCompleted: false
-    }
   ]);
 
   const addTodo = text => {
