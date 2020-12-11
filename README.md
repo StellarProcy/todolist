@@ -13,7 +13,9 @@ for example:
 
 ### Or make directory for project:
  ```cd```
+ 
 ```mkdir projects```
+
 ```cd projects```
 
 ### 2. Clone the repository:
