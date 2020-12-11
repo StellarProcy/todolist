@@ -1,48 +1,9 @@
 import React, {useState} from "react";
+
+import Todo from '../src/components/ToDo'
+import TodoForm from '../src/components/TodoForm'
+
 import "./App.css";
-
-function Todo({ todo, index, completeTodo, removeTodo }) {
-  return (
-    <div
-      className="todo"
-      style={{ 
-        background: todo.isCompleted ? "DarkSeaGreen" : "" , 
-        color: todo.isCompleted ? "gray" : "" }}
-    >
-      {todo.text}
-      <div>
-        <button onClick={() => completeTodo(index)}>Complete</button>
-        <button onClick={() => removeTodo(index)}>x</button>
-      </div>
-    </div>
-  );
-}
-
-function TodoForm({ addTodo }) {
-  const [value, setValue] = useState("");
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (!value || value.length <= 10)
-      alert('Количество символов в задаче не может быть меньше 10!');
-    else {
-      addTodo(value);
-      setValue("");
-    }
-  };
-
-  return (
-    <form className='submit-form' onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Введите здесь свою задачу"
-        className="input"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-      />
-    </form>
-  );
-}
 
 function App() {
   const [todos, setTodos] = useState([
