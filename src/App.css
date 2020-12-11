@@ -1,14 +1,7 @@
-.app {
+.container {
   background: #b0ccdf;
   height: 100vh;
-  padding: 30px;
-}
-
-.todo-list {
-  background: #e8e8e8;
-  border-radius: 2px;
-  max-width: 50rem;
-  padding: 5px;
+  padding: 0.5rem 1.5rem;
 }
 
 .todo {
@@ -23,6 +16,24 @@
   padding: 3px 10px;
 }
 
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 2px;
+  max-width: 50rem;
+  padding: 5px;
+}
+
 .input {
   width: 98%
+}
+
+.todo-button--remove {
+  background-color: #d43636; /* Green */
+  border: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../../App.css";
+
 function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
     <div
@@ -13,7 +15,9 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
         {todo.text}
       </div>
       <div>
-        <button onClick={() => removeTodo(index)}>x</button>
+        <button 
+          className="todo-button--remove"
+          onClick={() => removeTodo(index)}>Удалить</button>
       </div>
     </div>
   );

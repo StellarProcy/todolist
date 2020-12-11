@@ -31,7 +31,12 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="container">
+      <div className="header">
+        <div className="app-title">
+          <h1>To-do-list</h1>
+        </div>
+      </div>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo
