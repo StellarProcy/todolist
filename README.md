@@ -30,7 +30,7 @@ for example:
 ### 5. Laucnh the docker container:
 ```docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3005:3000 -e CHOKIDAR_USEPOLLING=true to-do-list:dev```
 
-###Note: if you want to change port - change 3005 on whatever you want.
+### Note: if you want to change port - change 3005 on whatever you want.
 
 ### 6. Try the app by click on the link: 
 http:\\localhost:3005 (or another port, if you chage it)
